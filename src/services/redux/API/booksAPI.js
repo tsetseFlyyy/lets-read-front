@@ -5,7 +5,7 @@ export const booksApi = createApi({
   tagTypes: ["Books"],
   //  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:8000/" }),
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://https://lets-read-back.onrender.com/",
+    baseUrl: "https://lets-read-back.onrender.com/",
   }),
   endpoints: (build) => ({
     getBooks: build.query({
