@@ -9,6 +9,7 @@ import { MakeNoteModal } from "./MakeNoteModal";
 
 export const BooksTable = () => {
   const { data = {}, isLoading } = useGetBooksQuery();
+
   const [title, setTitle] = useState();
   const [id, setID] = useState();
   const [friendName, setFriendName] = useState();
@@ -18,6 +19,10 @@ export const BooksTable = () => {
     useState(false);
   const [returnMyBookModalActive, setReturnMyBookModalActive] = useState(false);
   const [makeNoteModalActive, setMakeNoteModalActive] = useState(false);
+
+  if (isLoading) {
+    return <h1 style={{ textAlign: "center" }}>Loading...</h1>;
+  }
 
   return (
     <div id="books-table">
