@@ -250,6 +250,7 @@ form button {
 textarea {
 	margin-bottom: 20px;
 	width: 100%;
+	max-width: 300px;
 }
 
 .sc-bcXHqe {
