@@ -10,12 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/*<button onClick={() => setAddBookModalActive(true)}>Button</button>*/}
       <Main />
-      {/*<AddBookModal
-        active={AddBookModalActive}
-        setActive={setAddBookModalActive}
-      />*/}
     </div>
   );
 }
