@@ -3,7 +3,6 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const booksApi = createApi({
   reducerPath: "booksApi",
   tagTypes: ["Books"],
-  //  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:8000/" }),
   baseQuery: fetchBaseQuery({
     baseUrl: "https://lets-read-back.onrender.com/",
   }),
