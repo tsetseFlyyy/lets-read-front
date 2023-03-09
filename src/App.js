@@ -6,7 +6,6 @@ import { AddBookModal } from "./components/AddBookModal";
 import { useState } from "react";
 
 function App() {
-//  const [AddBookModalActive, setAddBookModalActive] = useState(true);
   return (
     <div className="App">
       <Header />
