@@ -1,70 +1,44 @@
-import { useGetBooksQuery } from "../services/redux/API/booksAPI";
-import { booksApi } from "../services/redux/API/booksAPI";
-import { act, renderHook } from "@testing-library/react";
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import { useGetBooksQuery } from "../services/redux/API/booksAPI"; // RTK Query API
+import { Component } from "../components/Component";
 import { BooksTable } from "../components/BooksTable";
-import { render } from "@testing-library/react";
-import { Provider } from "react-redux";
-//import * as rtkQuery from "../services/redux/API/booksAPI";
 
-const updateTimeout = 5000;
+import * as rtkQuery from "../services/redux/API/booksAPI";
 
 jest.mock("../services/redux/API/booksAPI");
 
-describe("Data", () => {
-  beforeEach(() => {
-    useGetBooksQuery.mockClear();
-  });
+const mockData = [
+  {
+    author: "author1",
+    title: "my book1",
+    friendsbook: false,
+  },
+  {
+    author: "author2",
+    title: "my book2",
+    friendsbook: false,
+  },
+  {
+    author: "author3",
+    title: "my book3",
+    friendsbook: false,
+  },
+];
 
-  it("should create BooksTable with books", async () => {
-    const data = [
-      {
-        author: "John Doe",
-        title: "The Big Deal",
-        friendsbook: false,
-      },
-    ];
-    useGetBooksQuery.mockReturnValueOnce(data);
+describe("MyComponent", () => {
+  it("should render data after API request", () => {
+    jest
+      .spyOn(rtkQuery, "useGetBooksQuery")
+      .mockReturnValue({ data: mockData });
     const tree = render(<BooksTable />);
-    expect(tree).toMatchSnapshot();
-  });
 
-  //  it("Success", async () => {
-  //    fetchMock.mockResponse(JSON.stringify([]));
-  //    const { result, waitForNextUpdate } = renderHook(
-  //      () => useGetBooksQuery(undefined),
-  //      { wrapper }
-  //    );
-  //    const initialResponse = result.current;
-  //    console.log(initialResponse);
-  //    expect(initialResponse.data).toBeUndefined();
-  //    expect(initialResponse.isLoading).toBe(true);
-  //    await waitForNextUpdate({ timeout: updateTimeout });
-  //    const nextResponse = result.current;
-  //    expect(nextResponse.data).not.toBeUndefined();
-  //    expect(nextResponse.isLoading).toBe(false);
-  //    expect(nextResponse.isSuccess).toBe(true);
-  //  });
-  //  const useGetBooksQueryMock = jest.spyOn(rtkQuery, "useGetBooksQuery");
-  //  beforeEach(() => {
-  //	useGetBooksQueryMock.mockClear();
-  //  });
-  //  it("should create BooksTable with empty books", () => {
-  //    useGetBooksQuery.mockReturnValue([]);
-  //    const tree = render(<BooksTable />);
-  // console.log("length: ", data.length);
-  // expect(data).toHaveLength(0);
-  //    expect(tree).toMatchSnapshot();
-  //  });
-  //  it("should check the data's length", () => {
-  /*
-  const res = await fetch('https://lets-read-back.onrender.com/books');
-  const result = await res.json();
-  console.log(result)
-  expect(result.name).toBe('');  
-  */
-  // useGetBooksQuery.mockReturnValue();
-  // fetchMock.mockResponse(JSON.stringify([]));
-  // const data = useGetBooksQuery();
-  // expect(data).toBeUndefined();
-  //  });
+    // Check that loading state is not displayed
+    // expect(screen.queryByText("Loading...")).toBeNull();
+    expect(tree).toMatchSnapshot();
+    // Check that data is displayed correctly
+    // expect(screen.getByText("author")).toBeInTheDocument();
+    // expect(screen.getByText("my book")).toBeInTheDocument();
+  });
 });

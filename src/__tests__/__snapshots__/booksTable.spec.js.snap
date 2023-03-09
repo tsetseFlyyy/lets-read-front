@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Data should create BooksTable with books 1`] = `
+exports[`MyComponent should render data after API request 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -47,6 +47,222 @@ Object {
             </h3>
           </div>
         </div>
+        <div
+          class="books-table-item"
+        >
+          <div
+            class="header-wrapper"
+          >
+            <h3>
+              1
+            </h3>
+          </div>
+          <div
+            class="header-wrapper"
+          >
+            <h3>
+              my book1
+            </h3>
+          </div>
+          <div
+            class="header-wrapper"
+          >
+            <h3>
+              author1
+            </h3>
+          </div>
+          <div
+            class="header-wrapper progress"
+          >
+            <div
+              class="sc-bcXHqe iyTLPo"
+            >
+              <div
+                class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-default css-dev-only-do-not-override-10ed4xt"
+                role="progressbar"
+              >
+                <div
+                  class="ant-progress-outer"
+                >
+                  <div
+                    class="ant-progress-inner"
+                  >
+                    <div
+                      class="ant-progress-bg"
+                      style="width: 0%; height: 12px;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="label-middle"
+              >
+                /
+              </div>
+            </div>
+          </div>
+          <div
+            class="header-wrapper"
+          >
+            <img
+              class="action-icon"
+              src="delete.png"
+            />
+            <img
+              class="action-icon arrow"
+              src="arrow.png"
+              style="transform: rotate(0.5turn);"
+            />
+            <img
+              class="action-icon"
+              src="note.png"
+            />
+          </div>
+        </div>
+        <div
+          class="books-table-item"
+        >
+          <div
+            class="header-wrapper"
+          >
+            <h3>
+              2
+            </h3>
+          </div>
+          <div
+            class="header-wrapper"
+          >
+            <h3>
+              my book2
+            </h3>
+          </div>
+          <div
+            class="header-wrapper"
+          >
+            <h3>
+              author2
+            </h3>
+          </div>
+          <div
+            class="header-wrapper progress"
+          >
+            <div
+              class="sc-bcXHqe iyTLPo"
+            >
+              <div
+                class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-default css-dev-only-do-not-override-10ed4xt"
+                role="progressbar"
+              >
+                <div
+                  class="ant-progress-outer"
+                >
+                  <div
+                    class="ant-progress-inner"
+                  >
+                    <div
+                      class="ant-progress-bg"
+                      style="width: 0%; height: 12px;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="label-middle"
+              >
+                /
+              </div>
+            </div>
+          </div>
+          <div
+            class="header-wrapper"
+          >
+            <img
+              class="action-icon"
+              src="delete.png"
+            />
+            <img
+              class="action-icon arrow"
+              src="arrow.png"
+              style="transform: rotate(0.5turn);"
+            />
+            <img
+              class="action-icon"
+              src="note.png"
+            />
+          </div>
+        </div>
+        <div
+          class="books-table-item"
+        >
+          <div
+            class="header-wrapper"
+          >
+            <h3>
+              3
+            </h3>
+          </div>
+          <div
+            class="header-wrapper"
+          >
+            <h3>
+              my book3
+            </h3>
+          </div>
+          <div
+            class="header-wrapper"
+          >
+            <h3>
+              author3
+            </h3>
+          </div>
+          <div
+            class="header-wrapper progress"
+          >
+            <div
+              class="sc-bcXHqe iyTLPo"
+            >
+              <div
+                class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-default css-dev-only-do-not-override-10ed4xt"
+                role="progressbar"
+              >
+                <div
+                  class="ant-progress-outer"
+                >
+                  <div
+                    class="ant-progress-inner"
+                  >
+                    <div
+                      class="ant-progress-bg"
+                      style="width: 0%; height: 12px;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="label-middle"
+              >
+                /
+              </div>
+            </div>
+          </div>
+          <div
+            class="header-wrapper"
+          >
+            <img
+              class="action-icon"
+              src="delete.png"
+            />
+            <img
+              class="action-icon arrow"
+              src="arrow.png"
+              style="transform: rotate(0.5turn);"
+            />
+            <img
+              class="action-icon"
+              src="note.png"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </body>,
@@ -91,6 +307,222 @@ Object {
           <h3>
             Action
           </h3>
+        </div>
+      </div>
+      <div
+        class="books-table-item"
+      >
+        <div
+          class="header-wrapper"
+        >
+          <h3>
+            1
+          </h3>
+        </div>
+        <div
+          class="header-wrapper"
+        >
+          <h3>
+            my book1
+          </h3>
+        </div>
+        <div
+          class="header-wrapper"
+        >
+          <h3>
+            author1
+          </h3>
+        </div>
+        <div
+          class="header-wrapper progress"
+        >
+          <div
+            class="sc-bcXHqe iyTLPo"
+          >
+            <div
+              class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-default css-dev-only-do-not-override-10ed4xt"
+              role="progressbar"
+            >
+              <div
+                class="ant-progress-outer"
+              >
+                <div
+                  class="ant-progress-inner"
+                >
+                  <div
+                    class="ant-progress-bg"
+                    style="width: 0%; height: 12px;"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="label-middle"
+            >
+              /
+            </div>
+          </div>
+        </div>
+        <div
+          class="header-wrapper"
+        >
+          <img
+            class="action-icon"
+            src="delete.png"
+          />
+          <img
+            class="action-icon arrow"
+            src="arrow.png"
+            style="transform: rotate(0.5turn);"
+          />
+          <img
+            class="action-icon"
+            src="note.png"
+          />
+        </div>
+      </div>
+      <div
+        class="books-table-item"
+      >
+        <div
+          class="header-wrapper"
+        >
+          <h3>
+            2
+          </h3>
+        </div>
+        <div
+          class="header-wrapper"
+        >
+          <h3>
+            my book2
+          </h3>
+        </div>
+        <div
+          class="header-wrapper"
+        >
+          <h3>
+            author2
+          </h3>
+        </div>
+        <div
+          class="header-wrapper progress"
+        >
+          <div
+            class="sc-bcXHqe iyTLPo"
+          >
+            <div
+              class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-default css-dev-only-do-not-override-10ed4xt"
+              role="progressbar"
+            >
+              <div
+                class="ant-progress-outer"
+              >
+                <div
+                  class="ant-progress-inner"
+                >
+                  <div
+                    class="ant-progress-bg"
+                    style="width: 0%; height: 12px;"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="label-middle"
+            >
+              /
+            </div>
+          </div>
+        </div>
+        <div
+          class="header-wrapper"
+        >
+          <img
+            class="action-icon"
+            src="delete.png"
+          />
+          <img
+            class="action-icon arrow"
+            src="arrow.png"
+            style="transform: rotate(0.5turn);"
+          />
+          <img
+            class="action-icon"
+            src="note.png"
+          />
+        </div>
+      </div>
+      <div
+        class="books-table-item"
+      >
+        <div
+          class="header-wrapper"
+        >
+          <h3>
+            3
+          </h3>
+        </div>
+        <div
+          class="header-wrapper"
+        >
+          <h3>
+            my book3
+          </h3>
+        </div>
+        <div
+          class="header-wrapper"
+        >
+          <h3>
+            author3
+          </h3>
+        </div>
+        <div
+          class="header-wrapper progress"
+        >
+          <div
+            class="sc-bcXHqe iyTLPo"
+          >
+            <div
+              class="ant-progress ant-progress-line ant-progress-status-normal ant-progress-default css-dev-only-do-not-override-10ed4xt"
+              role="progressbar"
+            >
+              <div
+                class="ant-progress-outer"
+              >
+                <div
+                  class="ant-progress-inner"
+                >
+                  <div
+                    class="ant-progress-bg"
+                    style="width: 0%; height: 12px;"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="label-middle"
+            >
+              /
+            </div>
+          </div>
+        </div>
+        <div
+          class="header-wrapper"
+        >
+          <img
+            class="action-icon"
+            src="delete.png"
+          />
+          <img
+            class="action-icon arrow"
+            src="arrow.png"
+            style="transform: rotate(0.5turn);"
+          />
+          <img
+            class="action-icon"
+            src="note.png"
+          />
         </div>
       </div>
     </div>
