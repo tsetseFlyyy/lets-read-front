@@ -1,6 +1,6 @@
 export const myBook = {
   author: "Author",
-  title: "my book",
+  title: "My book",
   friendsbook: false,
 };
 

@@ -130,7 +130,7 @@ export const BooksTable = () => {
       ) : (
         <></>
       )}
-      {/*<DeleteBookModal
+      <DeleteBookModal
         active={DeleteBookModalActive}
         setActive={setDeleteBookModalActive}
         id={id}
@@ -160,7 +160,7 @@ export const BooksTable = () => {
         setActive={setMakeNoteModalActive}
         id={id}
         title={title}
-      />*/}
+      />
     </div>
   );
 };
