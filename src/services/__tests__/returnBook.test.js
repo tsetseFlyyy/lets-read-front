@@ -1,13 +1,5 @@
 import { Books } from "../utils/utils";
-import { booksArr } from "../__fixtures__/GetBooksFixture";
-
 import { body } from "../__fixtures__/ReturnBookFixture";
-
-//it("API testing GET Request", async () => {
-//  const response = new Books();
-//  var data = await response.get();
-//  expect(data).toEqual(booksArr);
-//});
 
 it("Return my book by ID", async () => {
   const response = new Books();
@@ -37,3 +29,4 @@ it("Return my book by ID", async () => {
   expect(data[index].patronymic).toBe(body.patronymic);
   expect(data[index].deadline).toBe(body.deadline);
 });
+

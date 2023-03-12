@@ -48,4 +48,17 @@ export class Books {
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
   }
+  makeNote(id, data) {
+    return fetch(`https://lets-read-back.onrender.com/books/notes/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+			body: JSON.stringify({not: data}),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
+  }
+
 }
