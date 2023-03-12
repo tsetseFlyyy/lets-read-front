@@ -8,7 +8,7 @@ export class Books {
       }
     );
   }
-  post(data) {
+  addBook(data) {
     return fetch("https://lets-read-back.onrender.com/books", {
       method: "POST",
       headers: {
@@ -19,12 +19,21 @@ export class Books {
       return response.json();
     });
   }
-  delete(id) {
+  deleteBook(id) {
     return fetch(`https://lets-read-back.onrender.com/books/${id}`, {
       method: "DELETE",
     });
   }
-  sendToFriend() {
-
+  sendToFriend(id, data) {
+    return fetch(`https://lets-read-back.onrender.com/books/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
   }
 }
