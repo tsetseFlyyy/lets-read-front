@@ -1,6 +1,6 @@
 export const body = {
-	surname: "",
-	name: "",
-	patronymic: "",
-	deadline: "",
- };
+  name: "",
+  surname: "",
+  patronymic: "",
+  deadline: "",
+};
