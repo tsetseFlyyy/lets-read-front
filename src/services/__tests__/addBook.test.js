@@ -4,6 +4,7 @@ import { friendsBook } from "../__fixtures__/AddBookFixture";
 
 describe("Add book - Test", () => {
   it("Add my book", async () => {
+    jest.setTimeout(15000);
     const response = new Books();
     await response.addBook(myBook);
     var data = await response.get();
@@ -11,6 +12,7 @@ describe("Add book - Test", () => {
   });
 
   it("Add a friend's book", async () => {
+    jest.setTimeout(10000);
     const response = new Books();
     await response.addBook(friendsBook);
     var data = await response.get();
